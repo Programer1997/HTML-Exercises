@@ -1,0 +1,41 @@
+
+@media screen and (max-width: 10px) {
+    /* estilos para dispositivos con pantalla de hasta 600px de ancho */
+
+    #parrafo{
+        font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 600px) {
+    /* estilos para dispositivos con pantalla de 600px o más de ancho */
+  }
+
+h1{
+    border: 1px solid black;
+color : red;
+font-size: large;
+font-family: 'Courier New', Courier, monospace;
+padding:20px 10px 10px 5px;
+text-align: center;
+}
+h2 {
+
+    color: rgb(22 , 27, 157);
+}
+
+
+
+h3 {
+
+    color: rgb(22 , 27, 157);
+}
+h4 {
+
+    color: rgb(22 , 27, 157);
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  

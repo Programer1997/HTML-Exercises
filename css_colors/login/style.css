@@ -1,0 +1,82 @@
+*{
+
+    margin: 1%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-container {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 0px;
+    font-family: sans-serif;
+  }
+  
+  input[type="text"], input[type="password"],input[type="email"] {
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 20px;
+    border-color: rgb(251, 241, 241);
+    border-radius: 5px;
+    font-size: 16px;
+    
+  }
+
+form label {
+    
+    text-align: left;
+    display: block;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    color: rgb(145, 155, 155);
+
+}
+  
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(89, 191, 157);
+    color: white;
+    border-color: black;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: lightblue;
+  }
+
+  body{
+    background-color: rgb(53, 69, 133);
+  }
+  #newAccount{
+    color: white;
+   
+    font-family: sans-serif;
+    text-decoration: none !important;
+    text-align: center;
+  }
+
+  #terms {
+
+    text-align: center;
+    display: block;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    color: rgb(145, 155, 155);
+    text-decoration: none !important;
+  }
+
+  #conditions {
+
+    text-decoration: none;
+  }
+  #Privacity {
+
+    text-decoration: none;
+  }
