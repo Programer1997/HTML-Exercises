@@ -17,7 +17,7 @@
   
   input[type="text"], input[type="password"],input[type="email"] {
     width: 100%;
-    padding: 3px;
+    padding: 8px;
     margin-bottom: 20px;
     border-color: rgb(251, 241, 241);
     border-radius: 5px;
