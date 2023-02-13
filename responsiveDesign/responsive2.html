@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .header {
+        padding: 16px;
+        background-color: #f1f1f1;
+        text-align: center;
+      }
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      .menu {
+        width: 100%;
+        background-color: #f1f1f1;
+        text-align: center;
+      }
+      .menu a {
+        padding: 8px;
+        display: inline-block;
+        background-color: #ccc;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+      }
+      @media (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Responsive Web Design Example</h2>
+    </div>
+    <div class="menu">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <h2>Column 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <div class="column" style="background-color:#bbb;">
+        <h2>Column 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <div class="column" style="background-color:#ccc;">
+        <h2>Column 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+  </div>
+</body>
+</html>

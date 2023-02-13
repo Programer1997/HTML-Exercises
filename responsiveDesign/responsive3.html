@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .header {
+        padding: 16px;
+        background-color: #f1f1f1;
+        text-align: center;
+      }
+      .menu {
+        width: 100%;
+        background-color: #f1f1f1;
+        text-align: center;
+      }
+      .menu a {
+        padding: 8px;
+        display: inline-block;
+        background-color: #ccc;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+      }
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        text-align: center;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .icon {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: #ccc;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        font-size: 32px;
+        color: white;
+      }
+      .img-container {
+        width: 100%;
+        height: 200px;
+        background-image: url('https://via.placeholder.com/800x200');
+        background-size: cover;
+        background-position: center;
+      }
+      @media (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Responsive Web Design Example</h2>
+    </div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="row">
+      <div class="column">
+
+        <div class="icon">
+          <i class="fa fa-camera"></i>
+        </div>
+        <h2>Adult life</h2>
+        <p>The fathers spend to much time in the work and they never note that the time is running and proably they are not enjoying their life, however de thing is worse when you have a kids because the adults with childrens dont note they just spend really little time with their childrens beacause their work.</p>
+      </div>
+      <div class="column">
+        <div class="icon">
+        </div>
+        <h2>Column 2</h2>
+        <p>d minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+    <div class="column">
+      <div class="img-container"></div>
+      <h2>Column 3</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+  </div>
+</body>
+</html>
