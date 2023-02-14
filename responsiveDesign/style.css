@@ -1,0 +1,74 @@
+
+
+/*
+@media screen and (max-width: 10px) {
+    /* estilos para dispositivos con pantalla de hasta 600px de ancho 
+
+    #parrafo{
+        font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 600px) {
+    /* estilos para dispositivos con pantalla de 600px o más de ancho 
+  }*/
+
+
+
+
+  *{
+
+    margin: 0%;
+    padding: 0px;
+    text-align: center;
+    
+    
+}
+
+
+.container {
+
+    display: inline-block;
+    width: auto;
+    margin: auto;
+
+
+}
+header {
+
+    width: 100%;
+    background-color:rgb(51,51,51) ;
+    color: rgb(254,254,254);
+    padding: 8px;
+    
+   
+
+}
+
+.menu{
+
+   display: inline;
+   padding: 20px;
+
+}
+
+
+
+
+@media  (max-width: 600px){
+
+
+    .column{
+        width: 100%;
+        
+    }
+    body {
+
+        background-color: black;
+    }
+    
+}
+
+
+
+
