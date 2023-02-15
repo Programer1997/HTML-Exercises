@@ -7,6 +7,9 @@
        
         
       }
+      ul:hover{
+        color: rgb(202,110,38);
+      }
 
       body {
         display: flex;
@@ -17,13 +20,15 @@
         
         
       }
-
+     
+     
       header {
         background-color: rgb(51,51,51);
         width: 100vw;
-        padding: 50px;
+        padding: 10px;
         text-align: center;
         color: white;
+    
       }
 
       main {
@@ -53,9 +58,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -350%);
+  transform: translate(-50%, -250%);
   font-size: 200px;
   text-align: center;
+  z-index: 2;
   color:rgb(243,126,9) !important;
 }
 
@@ -63,37 +69,44 @@
     position: absolute;
   top: 50%;
   left: 50%;
-    transform: translate(-50%, -200%);
+    transform: translate(-50%, -160%);
     color: white;
-    
+    width: 100%;
+    z-index: 2; /*es para asegurar que el texto este por encima de la imagen y del filtro que agregue despues*/
 }
 .firstText {
-position: absolute;
+position: relative;
   top: 50%;
-  left: 20%;
-  transform: translate(-70%, -50%);
+  /*left: 20%;*/
+  transform: translate(-70%, 60%);
+  width: 100%;
+  text-align: center;
+  margin-left: 150px;
+  z-index: 2;
   
     
     
 }
-
 .secondText {
 position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-70%, 80%);
-
+ /* left: 50%;*/
+  transform: translate(-70%, 180%);
+  width: 100%;
+  margin-left: 170px;
+  z-index: 2;
 }
 .button5{
     position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-70%, 200%);
+  transform: translate(-70%, 230%);
   color: white;
-  background-color: black;
+  background-color: rgb(51, 51, 51);
   font-size: 25px;
 margin-top: 30px;
 padding: 20px;
+z-index: 2;
 }
 
 
@@ -153,12 +166,27 @@ padding: 20px;
       }
 
       .action{
-        font-size: 80%;
+        font-size: 0.9cm;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: inline-block;
       }
+    
     .tittleAbout {
         display: inline;
     }
+.action:hover{
+color: rgb(202,110,38);
+background-color:rgb(68,68,68) ;
 
+padding: 5px;
+width: 100vh;
+
+}
+.action:hover span {
+
+    color:rgb(202,110,38) ;
+}
     .editButton {
 font-size: 25px;
 margin-top: 40px;
@@ -172,6 +200,26 @@ padding: 20px;
         padding: 100px;
         margin-top: 0;
     }
+
+    .mainTittle {
+        margin-left: 60px;
+    }
+    .campingPhoto {
+        height: auto;
+        filter: brightness(70%);
+    }
+ 
+
+    @media screen and (min-width: 600px) {
+    /* estilos para dispositivos con pantalla de 600px o más de ancho */
+    body {
+        width: auto;
+    }
+    .mainTittle{
+        font-size: 1cm;
+    }
+  }
+    
     </style>
   </head>
   <body>
@@ -181,9 +229,9 @@ padding: 20px;
             <nav>
             <h1 class="mainTittle">YuruCamp</h1>
             <ul class="menu" style="list-style-type: none;">
-                <li> <a class="action" style= "text-decoration: none; color: rgb(254, 254, 254);" href="#">Home</a> </li>
-                <li> <a class="action" style= "text-decoration: none; color: rgb(254, 254, 254);" href="#">About</a></li>
-                <li><a class="action" style= "text-decoration: none; color: rgb(254, 254, 254);" href="#">Contact</a></li>
+                <li> <a id= "home" class="action" style= "text-decoration: none; color: rgb(254, 254, 254);" href="#"><span>Home</span></a> </li>
+                <li> <a id="about" class="action" style= "text-decoration: none; color: rgb(254, 254, 254);" href="#"><span>About</span></a></li> <hr />
+                <li><a id="Contact" class="action" style= "text-decoration: none; color: rgb(254, 254, 254);" href="#"><span>Contact</span></a></li>
             </ul>
             </nav>
         </header>
@@ -193,12 +241,12 @@ padding: 20px;
         <main>
 
           <div class="imagen">
-            <h2 class="enjoy" style="font-size: 50px;">Enjoy <span class="otrocolor" style="color: white;">Your</span></h2>
-            <h2 class="camping" style="font-size: 50px;">Camping Time</h2>
-            <p class="firstText" style="font-size: 20px;">Lorem ipsum,dolor sit amet consectetur adipiscing elit.</p>
-            <p class="secondText">Dolor, eligendi laboriosam. Repellendus officia harum eaque.</p>
+            <h2 class="enjoy" style="font-size: 95px;">Enjoy <span class="otrocolor" style="color: white;">Your</span></h2>
+            <h2 class="camping" style="font-size: 95px;">Camping Time</h2>
+            <p class="firstText" style="font-size: 30px;"><strong> Lorem ipsum,dolor sit amet consectetur adipiscing elit.</strong></p>
+            <p class="secondText" style="font-size: 30px;"><strong>Dolor, eligendi laboriosam. Repellendus officia harum eaque.</strong></p>
             <input class="button5" type="button" value="Join Us">
-            <img src="https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FtcGluZyUyMGtpZCUyMGFuZCUyMGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60" /> 
+            <img class = "campingPhoto" src="https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FtcGluZyUyMGtpZCUyMGFuZCUyMGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60" /> 
 
           </div>  
           <div class="About">
