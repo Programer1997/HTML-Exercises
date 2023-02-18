@@ -1,0 +1,28 @@
+*{
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: black;  
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+   
+}
+button{
+   
+    padding: 50px;
+
+}
+
+
+
+
+
+/*button text and border: #ffa260
+on hover: #f1ff5c*/
